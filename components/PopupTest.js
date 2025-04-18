@@ -29,7 +29,7 @@ export default function PopupTest() {
             {/* Popup Content */}
             <h2 className="text-2xl font-bold mb-4">Before You Go...</h2>
             <p className="text-gray-600 mb-6">
-              We'd hate to see you leave. Would you consider one of these options instead?
+              We&apos;d hate to see you leave. Would you consider one of these options instead?
             </p>
 
             {/* Options */}
