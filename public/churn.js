@@ -14,6 +14,7 @@
   
         const iframe = document.createElement("iframe");
         iframe.src = `${baseUrl}/popup`;
+        iframe.allowTransparency = "true"; // 👈 nécessaire sur certains navigateurs
         iframe.id = "churn-popup-iframe";
         iframe.style = `
           position: fixed;
