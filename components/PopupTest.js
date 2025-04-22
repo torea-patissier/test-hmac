@@ -15,7 +15,7 @@ export default function PopupTest() {
       {/* Popup Modal */}
       {isOpen && (
         <div className="fixed inset-0 bg-opacity-10 flex items-center justify-center">
-          <div className="bg-white rounded-lg p-8 max-w-md w-full mx-4 relative">
+          <div className="bg-white rounded-lg p-8 max-w-md w-full mx-4 relative border border-gray-200">
             {/* Close button */}
             <button
               onClick={() => setIsOpen(false)}

@@ -11,20 +11,6 @@
     window.Churn = {
       showCancelFlow: function () {
         if (document.getElementById("churn-popup-iframe")) return;
-  
-        // Create overlay div
-        const overlay = document.createElement("div");
-        overlay.id = "churn-popup-overlay";
-        overlay.style = `
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: transparent;
-          z-index: 9998;
-        `;
-        document.body.appendChild(overlay);
 
         const iframe = document.createElement("iframe");
         iframe.src = `${baseUrl}/popup`;
