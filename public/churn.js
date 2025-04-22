@@ -28,6 +28,20 @@
         iframe.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)";
         iframe.style.zIndex = "9999";
         document.body.appendChild(iframe);
+
+        // Listen for message from iframe to close
+        window.addEventListener('message', function(event) {
+          // Check if message is from our popup iframe
+          if (event.source === document.getElementById("churn-popup-iframe").contentWindow) {
+            // TODO: Need to implement closeChurnPopup message from the popup iframe
+            if (event.data === 'closeChurnPopup') {
+              const popup = document.getElementById("churn-popup-iframe");
+              if (popup) {
+                document.body.removeChild(popup);
+              }
+            }
+          }
+        });
       }
     };
   })();
