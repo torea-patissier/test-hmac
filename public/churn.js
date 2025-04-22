@@ -16,6 +16,17 @@
         iframe.src = `${baseUrl}/popup`;
         iframe.allowTransparency = "true"; // 👈 nécessaire sur certains navigateurs
         iframe.id = "churn-popup-iframe";
+        iframe.style.position = "fixed";
+        iframe.style.top = "50%";
+        iframe.style.left = "50%";
+        iframe.style.transform = "translate(-50%, -50%)";
+        iframe.style.width = "500px";
+        iframe.style.height = "400px";
+        iframe.style.border = "none";
+        iframe.style.borderRadius = "8px";
+        iframe.style.backgroundColor = "white";
+        iframe.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)";
+        iframe.style.zIndex = "9999";
         document.body.appendChild(iframe);
       }
     };
