@@ -25,7 +25,6 @@
         iframe.style.border = "none";
         iframe.style.borderRadius = "8px";
         iframe.style.backgroundColor = "white";
-        iframe.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)";
         iframe.style.zIndex = "9999";
         document.body.appendChild(iframe);
 
